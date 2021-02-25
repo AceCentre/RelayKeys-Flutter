@@ -1,0 +1,37 @@
+name: relay_keys
+description: RelayKeys Ble companion app to turn your mobile into BleHID mouse and keyboard.
+version: 2.7.1
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  frccblue:
+    git:  
+      url: https://github.com/frcc00/frccblue
+  flutter_reactive_ble: ^2.7.1
+  flutter_blue: ^0.7.3
+  eventizer: ^0.0.8
+  permission_handler: ^5.0.1+1
+  path_provider: ^1.6.24
+  fluttertoast: ^7.1.6
+  hive: ^1.4.4+1
+  future_button: ^0.1.2
+
+dev_dependencies:
+  dependency_validator:
+  flutter_test:
+    sdk: flutter
+  mockito: ^4.1.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/logo.jpg
+    - assets/modules.json
