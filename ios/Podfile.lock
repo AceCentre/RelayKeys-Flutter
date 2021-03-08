@@ -1,33 +1,71 @@
 PODS:
   - Flutter (1.0.0)
+  - flutter_blue (0.0.1):
+    - Flutter
+    - flutter_blue/Protos (= 0.0.1)
+  - flutter_blue/Protos (0.0.1):
+    - Flutter
+    - Protobuf (~> 3.11.4)
   - flutter_reactive_ble (0.0.1):
     - Flutter
     - Protobuf (~> 3.5)
     - SwiftProtobuf (~> 1.0)
-  - Protobuf (3.13.0)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - frccblue (0.0.1):
+    - Flutter
+  - path_provider (0.0.1):
+    - Flutter
+  - "permission_handler (5.0.1+1)":
+    - Flutter
+  - Protobuf (3.11.4)
   - SwiftProtobuf (1.12.0)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - flutter_blue (from `.symlinks/plugins/flutter_blue/ios`)
   - flutter_reactive_ble (from `.symlinks/plugins/flutter_reactive_ble/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - frccblue (from `.symlinks/plugins/frccblue/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
 
 SPEC REPOS:
   trunk:
     - Protobuf
     - SwiftProtobuf
+    - Toast
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  flutter_blue:
+    :path: ".symlinks/plugins/flutter_blue/ios"
   flutter_reactive_ble:
     :path: ".symlinks/plugins/flutter_reactive_ble/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  frccblue:
+    :path: ".symlinks/plugins/frccblue/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_reactive_ble: 118af63a7cda4e26ae1791bd1ddf659e2ae0a76d
-  Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
+  flutter_blue: eeb381dc4727a0954dede73515f683865494b370
+  flutter_reactive_ble: ac0ccac596f481b221549cad2abe16987e1f411b
+  fluttertoast: 6122fa75143e992b1d3470f61000f591a798cc58
+  frccblue: f37697fd2bcb0ce5f55077d0e69aa2b71b51ea7c
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  permission_handler: eac8e15b4a1a3fba55b761d19f3f4e6b005d15b6
+  Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
   SwiftProtobuf: 4ef85479c18ca85b5482b343df9c319c62bda699
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: fe0e1ee7f3d1f7d00b11b474b62dd62134535aea
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

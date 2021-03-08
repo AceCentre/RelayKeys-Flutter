@@ -4,6 +4,12 @@
 
 #import "GeneratedPluginRegistrant.h"
 
+#if __has_include(<frccblue/FrccbluePlugin.h>)
+#import <frccblue/FrccbluePlugin.h>
+#else
+@import frccblue;
+#endif
+
 #if __has_include(<flutter_blue/FlutterBluePlugin.h>)
 #import <flutter_blue/FlutterBluePlugin.h>
 #else
@@ -22,12 +28,6 @@
 @import fluttertoast;
 #endif
 
-#if __has_include(<frccblue/FrccbluePlugin.h>)
-#import <frccblue/FrccbluePlugin.h>
-#else
-@import frccblue;
-#endif
-
 #if __has_include(<path_provider/FLTPathProviderPlugin.h>)
 #import <path_provider/FLTPathProviderPlugin.h>
 #else
@@ -43,10 +43,10 @@
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
+  [FrccbluePlugin registerWithRegistrar:[registry registrarForPlugin:@"FrccbluePlugin"]];
   [FlutterBluePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterBluePlugin"]];
   [ReactiveBlePlugin registerWithRegistrar:[registry registrarForPlugin:@"ReactiveBlePlugin"]];
   [FluttertoastPlugin registerWithRegistrar:[registry registrarForPlugin:@"FluttertoastPlugin"]];
-  [FrccbluePlugin registerWithRegistrar:[registry registrarForPlugin:@"FrccbluePlugin"]];
   [FLTPathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPathProviderPlugin"]];
   [PermissionHandlerPlugin registerWithRegistrar:[registry registrarForPlugin:@"PermissionHandlerPlugin"]];
 }

@@ -15,10 +15,10 @@ import io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry;
 public final class GeneratedPluginRegistrant {
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     ShimPluginRegistry shimPluginRegistry = new ShimPluginRegistry(flutterEngine);
+      com.pauldemarco.frccblue.FrccbluePlugin.registerWith(shimPluginRegistry.registrarFor("com.pauldemarco.frccblue.FrccbluePlugin"));
     flutterEngine.getPlugins().add(new com.pauldemarco.flutter_blue.FlutterBluePlugin());
     flutterEngine.getPlugins().add(new com.signify.hue.flutterreactiveble.ReactiveBlePlugin());
     flutterEngine.getPlugins().add(new io.github.ponnamkarthik.toast.fluttertoast.FlutterToastPlugin());
-      com.pauldemarco.frccblue.FrccbluePlugin.registerWith(shimPluginRegistry.registrarFor("com.pauldemarco.frccblue.FrccbluePlugin"));
     flutterEngine.getPlugins().add(new io.flutter.plugins.pathprovider.PathProviderPlugin());
     flutterEngine.getPlugins().add(new com.baseflow.permissionhandler.PermissionHandlerPlugin());
   }
